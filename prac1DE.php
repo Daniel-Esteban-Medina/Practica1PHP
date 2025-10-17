@@ -2,6 +2,7 @@
 <html lang="es">
     <head>
         <title>prac1DE</title>
+        <link rel="stylesheet" href="styleDE.css">
     </head>
     <body>
         <h2>Ejercicio 1: Bucles anidados</h2>
@@ -72,14 +73,15 @@
 
         <h2>Ejercicio 2: Arrays bidimensionales</h2>
 
+        <h3 id="cabeceraTabla">Temperaturas de ciudades por día (ºC)</h3>
         <?php
             $temps = array(
-                array(0,0,0,0,0,0),
-                array(0,0,0,0,0,0),
-                array(0,0,0,0,0,0),
-                array(0,0,0,0,0,0),
-                array(0,0,0,0,0,0),
-                array(0,0,0,0,0,0)
+                array(0,0,0,0,0,0,0),
+                array(0,0,0,0,0,0,0),
+                array(0,0,0,0,0,0,0),
+                array(0,0,0,0,0,0,0),
+                array(0,0,0,0,0,0,0),
+                array(0,0,0,0,0,0,0)
             );
             for($i = 0; $i < count($temps); $i++){
                 for($j = 0; $j < count($temps[$i]); $j++){

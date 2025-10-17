@@ -1,0 +1,30 @@
+.findes{
+    background-color: #BEFFA3;
+}
+
+.ciudadMediaAlta{
+    background-color: #FFFDA3;
+}
+
+.ciudades{
+    background-color: #B8D9D4;
+}
+
+#cabeceraTabla{
+    background-color: #002338;
+    color:white;
+}
+table{
+    border: 1px solid black;
+    border-collapse: separate;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+.grados{
+    border-left: 1px solid #002338;
+    background-color: #969696;
+}
+
+.cabeceraColumna{
+    background-color: #C7C7C7;
+}
