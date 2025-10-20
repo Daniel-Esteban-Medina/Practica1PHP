@@ -121,6 +121,12 @@ function analizarPalabras($texto):array{
 
 // 4
 
-function convertTemperature(){
-    
+function convertTemperature($temp, $unidadOrigen = "celsius", $unidadSalida = "fahrenheit"){
+$returnar = "";
+if($unidadOrigen != "celsius" &&  $unidadOrigen != "fahrenheit" && $unidadOrigen != "kelvin"){
+    $returnar = false;
+}
+if($unidadSalida != "celsius" &&  $unidadSalida != "fahrenheit" && $unidadSalida != "kelvin"){
+    $returnar = false;
+}
 }
