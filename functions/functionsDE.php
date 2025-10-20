@@ -121,12 +121,44 @@ function analizarPalabras($texto):array{
 
 // 4
 
-function convertTemperature($temp, $unidadOrigen = "celsius", $unidadSalida = "fahrenheit"){
-$returnar = "";
+function convertTemperature($temp, $unidadOrigen = "celsius", $unidadSalida = "fahrenheit"): float{
+$formatoValido = true;
 if($unidadOrigen != "celsius" &&  $unidadOrigen != "fahrenheit" && $unidadOrigen != "kelvin"){
-    $returnar = false;
+    $formatoValido = false;
 }
 if($unidadSalida != "celsius" &&  $unidadSalida != "fahrenheit" && $unidadSalida != "kelvin"){
-    $returnar = false;
+    $formatoValido = false;
+}
+$resultado = 0;
+if($formatoValido){
+    switch($unidadOrigen){
+        case "celsius":
+                if($unidadSalida == "fahrenheit"){
+
+                } else {
+                    //kelvin
+
+                }
+        break;
+        case "fahrenheit":
+            if($unidadSalida == "celsius"){
+                    
+                } else {
+                    //kelvin
+
+                }
+        break;
+        case "kelvin":
+            if($unidadSalida == "fahrenheit"){
+                    
+                } else {
+                    //celsius
+
+                }
+        break;
+    }
+    return $resultado;
+} else {
+    return $formatoValido;
 }
 }
